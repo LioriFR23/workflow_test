@@ -6,8 +6,3 @@ resource "aws_s3_object" "demo_text" {
   key     = "test_workflow/demo.txt"
   content = "hello Firefly!"
 }
-
-resource "local_file" "simple_txt" {
-  content  = "This is a simple text file created by Terraform."
-  filename = "${path.module}/simple.txt"
-}
