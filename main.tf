@@ -1,5 +1,4 @@
 provider "aws"   { region = "us-east-1" }
-provider "local" {}
 
 resource "aws_s3_object" "demo_text" {
   bucket  = "firefly-tfstate-runner-350715735192"
