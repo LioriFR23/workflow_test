@@ -1,4 +1,4 @@
-# workflow_test
+# workflow_tests
 
 
 provider "local" {
