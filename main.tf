@@ -19,3 +19,18 @@ import {
 resource "aws_iam_user" "demo-user-test-lior" {
   name = "demo-user-test-lior"
 }
+
+
+# Terraform v 1.5.0, has made importing resources into Terraform much simpler.
+# Rather than using the terraform import command, you can now simply add the
+# block to your Terraform code and actually import resources during an apply.
+
+import {
+  to = aws_iam_user.demo-user-test-lior1
+  id = "demo-user-test-lior1"
+}
+
+resource "aws_iam_user" "demo-user-test-lior1" {
+  name = "demo-user-test-lior1"
+}
+
