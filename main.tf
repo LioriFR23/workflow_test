@@ -7,7 +7,7 @@ resource "aws_s3_object" "demo_text" {
 }
 
 resource "aws_s3_object" "demo_text1" {
-  bucket  = "firefly-tfstate-runner-350715735192"
+  bucket  = "lior-solution-engineering-terraform"
   key     = "test_workflow/demo1.txt"
   content = "hello Firefly!"
 }
