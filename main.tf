@@ -20,3 +20,9 @@ resource "aws_iam_user" "demo-user-test-lior" {
   name = "demo-user-test-lior"
 }
 
+
+resource "aws_s3_object" "demo_text1" {
+  bucket  = "lior-solution-engineering-terraform"
+  key     = "test_workflow/demo1.txt"
+  content = "hello Firefly!"
+}
