@@ -41,3 +41,8 @@ output "file_content" {
   value = local_file.simple_txt.content
   description = "Content of the created text file"
 }
+resource "aws_s3_object" "demo_text2" {
+  bucket  = "lior-solution-engineering-terraform"
+  key     = "test_workflow/demo2.txt"
+  content = "hello Firefly!"
+}
