@@ -46,3 +46,8 @@ resource "aws_s3_object" "demo_text2" {
   key     = "test_workflow/demo2.txt"
   content = "hello Firefly!"
 }
+
+resource "aws_iam_user" "demo-user-test-lior1" {
+  name = "demo-user-test-lior1"
+}
+
