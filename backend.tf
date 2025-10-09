@@ -5,7 +5,7 @@ terraform {
     local = { source = "hashicorp/local", version = ">= 2.4" }
   }
   backend "s3" {
-    bucket = "firefly-tfstate-runner-350715735192"
+    bucket = "lior-solution-engineering-terraform"
     key    = "test_workflow/terraform.tfstate"
     region = "us-east-1"
   }
